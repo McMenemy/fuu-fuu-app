@@ -14,8 +14,16 @@ class Picture < ActiveRecord::Base
   validates :filepath, :date, presence: true
   validates :filepath, uniqueness: true
 
-  def self.all_couple
-    Picture.where(couple: true)
+  def self.all_asc_couple
+    pictures = Picture.where(couple: true)
+
+    pictures.sort {|pic1, pic2| Date.parse(pic2.date) <=> Date.parse(pic1.date)}
+  end
+
+  def self.all_desc_couple
+    pictures = Picture.where(couple: true)
+
+    pictures.sort {|pic1, pic2| Date.parse(pic1.date) <=> Date.parse(pic2.date)}
   end
 
   def self.all_asc

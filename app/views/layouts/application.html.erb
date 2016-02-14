@@ -2,25 +2,47 @@
 <html>
 <head>
   <title>Pictures</title>
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,700" type="text/css">
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
 
-<br>
+<body>
 
-<% if signed_in? %>
-  <%= current_user.username %>
-  <%= button_to "Sign Out", session_url, :method => :delete %>
-<% else %>
-  <%= link_to "Sign In", new_session_url %>
-<% end %>
+  <header class="header">
+    <nav class="header-nav group">
 
-<br>
+      <h1 class="header-logo">
+        <%= link_to "Peasant Josh & Princess Fuu Fuu", pictures_url %>
+      </h1>
+
+      <ul class="header-list group">
+        <li><%= link_to "About Felicia", new_session_url %></li>
+      </ul>
+
+    </nav>
+  </header>
 
 <%= flash[:errors].join("<br>").html_safe if flash[:errors] %>
 
 <%= yield %>
+
+<footer class="footer group">
+
+    <small class="footer-copy">
+      Created by the lucky boyfriend - Josh McMenemy
+    </small>
+
+    <ul class="footer-links group">
+      <% if signed_in? %>
+        <li><%= link_to "Admin Logout", session_url, :method => :delete %></li>
+      <% else %>
+        <li><%= link_to "Admin Login", new_session_url %><li>
+      <% end %>
+    </ul>
+
+</footer>
 
 </body>
 </html>

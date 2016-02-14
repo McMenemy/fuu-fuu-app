@@ -1,8 +1,26 @@
 <div class="tile-container">
+  <ul class="picture-nav-list group">
+    <% if @display_mode[0] == 'asc' && @display_mode[1] == 'all' %>
+      <li><%= link_to "Show Oldest First", descending_pictures_url %></li>
+      <li><%= link_to "Show Only Couple Pictures", ascending_couple_pictures_url %></li>
+    <% elsif @display_mode[0] == 'desc' && @display_mode[1] == 'all' %>
+      <li><%= link_to "Show Newest First", pictures_url %></li>
+      <li><%= link_to "Show Only Couple Pictures", descending_couple_pictures_url %></li>
+    <% elsif @display_mode[0] == 'asc' && @display_mode[1] == 'couple' %>
+      <li><%= link_to "Show Oldest First", descending_couple_pictures_url %></li>
+      <li><%= link_to "Show All Pictures", pictures_url %></li>
+    <% elsif @display_mode[0] == 'desc' && @display_mode[1] == 'couple' %>
+      <li><%= link_to "Show Newest First", ascending_couple_pictures_url %></li>
+      <li><%= link_to "Show All Pictures", descending_pictures_url %></li>
+    <% end %>
+  </ul>
+
+  <br>
+
   <ul class="tile-list group">
     <% @pictures.each do |picture|%>
       <li class="tile">
-        <%= link_to image_tag(asset_path(picture.filepath)), picture_url(picture) %>
+        <%= link_to image_tag(asset_path(picture.filepath)), picture_url(picture), class: "picture" %>
       </li>
     <% end %>
   </ul>

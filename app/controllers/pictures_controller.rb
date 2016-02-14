@@ -2,16 +2,26 @@ class PicturesController < ApplicationController
 
   def index
     @pictures = Picture.all_asc
+    @display_mode = ["asc", "all"]
   end
 
   def descending
     @pictures = Picture.all_desc
+    @display_mode = ["desc", "all"]
 
     render :index
   end
 
-  def couple
-    @pictures = Picture.all_couple
+  def ascending_couple
+    @pictures = Picture.all_asc_couple
+    @display_mode = ["asc", "couple"]
+
+    render :index
+  end
+
+  def descending_couple
+    @pictures = Picture.all_desc_couple
+    @display_mode = ["desc", "couple"]
 
     render :index
   end
