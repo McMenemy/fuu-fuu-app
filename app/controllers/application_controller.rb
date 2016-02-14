@@ -4,6 +4,10 @@ class ApplicationController < ActionController::Base
 
   helper_method :current_user, :signed_in?
 
+  def about
+    render "/about"
+  end
+
   private
   def current_user
     @current_user ||= User.find_by(session_token: session[:session_token])

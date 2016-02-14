@@ -8,5 +8,6 @@ Rails.application.routes.draw do
   get '/ascending_couple_pictures', to: 'pictures#ascending_couple'
   get '/descending_couple_pictures', to: 'pictures#descending_couple'
   get '/descending_pictures', to: 'pictures#descending'
+  get '/aboutfelly', to: 'application#about'
 
 end
