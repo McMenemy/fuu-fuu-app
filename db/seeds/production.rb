@@ -1,1 +1,12 @@
 User.create(username: 'PrincessFuuFuu', password: 'teacher')
+
+Picture.create(filepath: "11393187_853978597983939_781089838533914090_n.jpg", date: "2015-06-09", couple: "false")
+Picture.create(filepath: "10885462_778852378829895_1783599540020532025_n.jpg", date: "2014-12-31", couple: "false")
+Picture.create(filepath: "530537_4706631756932_685433925_n.jpg", date: "2015-06-09", couple: "true")
+Picture.create(filepath: "1794559_764302626938526_671444710082601379_n.jpg", date: "2013-12-28", couple: "false")
+Picture.create(filepath: "10409659_646123422129808_3369537854310956644_n.jpg", date: "2014-06-07", couple: "false")
+Picture.create(filepath: "1496114_10201956622496133_862708708_o.jpg", date: "2013-12-27", couple: "false")
+Picture.create(filepath: "1521531_10201956614135924_1895601428_n.jpg", date: "2013-12-27", couple: "false")
+Picture.create(filepath: "1551664_10201956607935769_587921120_n.jpg", date: "2013-12-27", couple: "false")
+Picture.create(filepath: "903257_10201956600135574_427225588_o.jpg", date: "2013-12-27", couple: "false")
+Picture.create(filepath: "964016_10201956588335279_1468129303_o.jpg", date: "2013-12-27", couple: "true")
