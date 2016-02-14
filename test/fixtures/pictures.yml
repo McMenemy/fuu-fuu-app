@@ -7,6 +7,7 @@
 #  date       :string           not null
 #  created_at :datetime         not null
 #  updated_at :datetime         not null
+#  couple     :boolean          default(FALSE)
 #
 
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html

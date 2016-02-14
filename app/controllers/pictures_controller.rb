@@ -1,7 +1,19 @@
 class PicturesController < ApplicationController
 
   def index
-    @pictures = Picture.all
+    @pictures = Picture.all_asc
+  end
+
+  def descending
+    @pictures = Picture.all_desc
+
+    render :index
+  end
+
+  def couple
+    @pictures = Picture.all_couple
+
+    render :index
   end
 
   def show

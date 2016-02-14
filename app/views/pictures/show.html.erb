@@ -1,3 +1,5 @@
 <h2><%= @picture.date %></h2>
 
-<img src="<%= asset_path( @picture.filepath ) %>" alt="<%= @picture.filepath %>"> 
+<div class="tile-container">
+  <img class="picture-show" src="<%= asset_path( @picture.filepath ) %>" alt="<%= @picture.filepath %>">
+<div class="tile-container">

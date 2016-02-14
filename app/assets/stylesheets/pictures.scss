@@ -1,3 +1,55 @@
 // Place all the styles related to the pictures controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+.tile-container {
+  width: 909px;
+  margin: 0 auto;
+  background-color: #ffccff;
+  padding: 20px 0px 20px 20px;
+}
+
+.tile-list {
+}
+
+.tile {
+  float: left;
+  display: block;
+  position: relative;
+  background-color: #aaa;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  margin: 10px;
+  border-radius: 5%;
+  border: 1px solid #aaa;
+  vertical-align: middle;
+}
+
+.tile:hover {
+  float: left;
+  display: block;
+  position: relative;
+  width: 221px;
+  height: 221px;
+  overflow: hidden;
+  margin: 10px;
+  border-radius: 5%;
+}
+
+.picture-show {
+  display: block;
+  position: relative;
+  width: 500px;
+  margin: 0 auto;
+}
+
+.profile-picture {
+  display: block;
+  margin-top: -120px;
+  border: 1px solid #000;
+  background: #000;
+  border-radius: 5px;
+  position: relative;
+}

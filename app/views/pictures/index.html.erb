@@ -1,10 +1,9 @@
-<h1>Pictures</h1>
-
-<ul>
-  <% @pictures.each do |picture|%>
-    <li>
-      <%= link_to image_tag(asset_path(picture.filepath)), picture_url(picture) %>
-      <p><%= picture.date %></p>
-    </li>
-  <% end %>
-</ul>
+<div class="tile-container">
+  <ul class="tile-list group">
+    <% @pictures.each do |picture|%>
+      <li class="tile">
+        <%= link_to image_tag(asset_path(picture.filepath)), picture_url(picture) %>
+      </li>
+    <% end %>
+  </ul>
+</div>
