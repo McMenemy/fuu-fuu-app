@@ -11,13 +11,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160214034225) do
+ActiveRecord::Schema.define(version: 20160214061303) do
 
   create_table "pictures", force: :cascade do |t|
-    t.string   "filepath",   null: false
-    t.string   "date",       null: false
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.string   "filepath",                   null: false
+    t.string   "date",                       null: false
+    t.datetime "created_at",                 null: false
+    t.datetime "updated_at",                 null: false
+    t.boolean  "couple",     default: false
   end
 
   add_index "pictures", ["date"], name: "index_pictures_on_date"

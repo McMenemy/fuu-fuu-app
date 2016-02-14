@@ -1,1 +1,10 @@
-<h1>all pictures here</h1>
+<h1>Pictures</h1>
+
+<ul>
+  <% @pictures.each do |picture|%>
+    <li>
+      <%= link_to image_tag(asset_path(picture.filepath)), picture_url(picture) %>
+      <p><%= picture.date %></p>
+    </li>
+  <% end %>
+</ul>
