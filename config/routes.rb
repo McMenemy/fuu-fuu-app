@@ -1,3 +1,7 @@
 Rails.application.routes.draw do
-  root 'application#hello'
+  root to: "sessions#new"
+
+  resources :users, only: [:new, :create]
+  resource :session, only: [:new, :create, :destroy]
+  resources :pictures
 end
