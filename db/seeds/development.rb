@@ -54,7 +54,7 @@ Picture.create(filepath: "4a328313-1520-46bb-bf40-1c962359993c.jpeg", date: "201
 Picture.create(filepath: "1d1f5982-0556-4091-ad0e-af12d1261446.jpeg", date: "2012-06-06", couple: "false")
 Picture.create(filepath: "5967773e-1dda-4828-8455-1bd6b73d7579.jpeg", date: "2010-03-15", couple: "true")
 Picture.create(filepath: "3f000289-cb1f-4f76-a7c1-9cfcdfa6b12d.jpeg", date: "2010-03-15", couple: "true")
-Picture.create(filepath: "1a9ce8e7-6777-4cf0-b310-112a07924c1e.jpeg", date: "2010-03-15", couple: "true")
+Picture.create(filepath: "1a9ce8e7-6777-4cf0-b310-112a07924c1e.jpg", date: "2010-03-15", couple: "true")
 Picture.create(filepath: "03db2001-1919-46bd-bdd1-7c2a70e56d6e.jpeg", date: "2010-03-15", couple: "false")
 Picture.create(filepath: "9afe0fd1-e1df-4ad8-990b-f8bb76607d5c.jpeg", date: "2010-03-14", couple: "true")
 Picture.create(filepath: "5d80a050-2566-4acb-9062-ea93115860aa.jpeg", date: "2010-03-14", couple: "false")
